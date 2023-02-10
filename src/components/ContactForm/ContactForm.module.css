@@ -15,17 +15,18 @@
   border: 1px solid #979797;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: #b4d6f3;
 }
 .numberInput {
   margin-bottom: 20px;
 }
 .numberInput:hover,
-:focus {
+.numberInput:focus {
   border: 2px solid #b4d6f3;
 }
 .nameInput:hover,
-:focus {
+.nameInput:focus {
   border: 2px solid #b4d6f3;
 }

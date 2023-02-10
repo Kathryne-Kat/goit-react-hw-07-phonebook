@@ -13,6 +13,7 @@
   border: 1px solid #979797;
   /* background-color: #b4d6f3; */
 }
-.listDel:hover {
+.listDel:hover,
+.listDel:focus {
   background-color: #b4d6f3;
 }

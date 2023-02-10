@@ -1,0 +1,8 @@
+.title {
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+.inputFilter:hover,
+:focus {
+  border: 2px solid #b4d6f3;
+}

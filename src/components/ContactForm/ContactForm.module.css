@@ -18,6 +18,7 @@
 .btn:hover,
 .btn:focus {
   background-color: #b4d6f3;
+  cursor: pointer;
 }
 .numberInput {
   margin-bottom: 20px;

@@ -41,8 +41,3 @@ export const { addContacts, deleteContact, handleFilterSlice } =
   contactsSlice.actions;
 
 export const contactsReducer = contactsSlice.reducer;
-
-// Генератори екшенів
-//export const { addTask, deleteTask, toggleCompleted } = tasksSlice.actions;
-// Редюсер слайсу
-//const tasksReducer = tasksSlice.reducer;

@@ -9,14 +9,6 @@ export default function ContactForm() {
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
 
-  // const handleNameChange = e => {
-  //   setName(e.target.value);
-  // };
-
-  // const handleNumberChange = e => {
-  //   setNumber(e.target.value);
-  // };
-
   const handelChange = e => {
     const { name, value } = e.target;
     switch (name) {

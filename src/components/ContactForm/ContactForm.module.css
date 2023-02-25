@@ -5,7 +5,9 @@
   padding: 0 0 10px 10px;
 }
 
-.title {
+p.title {
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 5px;
   margin-top: 20px;
 }

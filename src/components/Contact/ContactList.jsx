@@ -13,21 +13,20 @@ export const ContactList = () => {
 
   return (
     <ul className={css.list}>
-      {getFilteredContacts.length > 0 &&
-        getFilteredContacts.map(contact => {
-          return (
-            <li className={css.listItem} key={contact.id}>
-              {contact.name}: {contact.number}
-              <button
-                className={css.listDel}
-                onClick={() => dispatch(deleteContact(contact.id))}
-                type="button"
-              >
-                Delete
-              </button>
-            </li>
-          );
-        })}
+      {getFilteredContacts.map(contact => {
+        return (
+          <li className={css.listItem} key={contact.id}>
+            {contact.name}: {contact.number}
+            <button
+              className={css.listDel}
+              onClick={() => dispatch(deleteContact(contact.id))}
+              type="button"
+            >
+              Delete
+            </button>
+          </li>
+        );
+      })}
     </ul>
   );
 };

@@ -13,7 +13,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 
 const persistedReducer = persistReducer(
-  { key: 'contacts', storage, whitelist: ['items'] },
+  { key: 'contacts_K', storage, whitelist: ['items'] },
   contactsReducer
 );
 

@@ -13,14 +13,14 @@ export default function App() {
     <div className={css.container}>
       <h1 className={css.titleH1}>Phonebook</h1>
       <ContactForm />
-      <h2 className={css.titleH1}>Contacts</h2>
+      <h2 className={css.titleH2}>Contacts</h2>
       {contacts.length > 0 ? (
         <>
           <Filter />
           <ContactList />
         </>
       ) : (
-        'No contacts'
+        <p className={css.comment}>No contacts</p>
       )}
     </div>
   );

@@ -1,9 +1,25 @@
 .container {
   width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 .titleH1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  color: rgb(64, 13, 116);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 7px 5px -1px rgba(148, 145, 148, 1);
+  -moz-box-shadow: 2px 7px 5px -1px rgba(148, 145, 148, 1);
+  box-shadow: 2px 7px 5px -1px rgba(148, 145, 148, 1);
+}
+.titleH2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.comment {
+  width: 300px;
+  margin: 0 auto;
 }

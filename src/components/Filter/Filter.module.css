@@ -2,7 +2,22 @@
   font-weight: normal;
   padding-bottom: 5px;
 }
+.inputFilter {
+  display: block;
+  height: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
 .inputFilter:hover,
 :focus {
-  border: 2px solid #b4d6f3;
+  border: 1px solid rgb(164, 47, 231);
+}
+.filter {
+  width: 300px;
+  display: block;
+
+  margin: 0 auto;
+}
+div.filter_wrap {
+  margin: 0 auto;
 }

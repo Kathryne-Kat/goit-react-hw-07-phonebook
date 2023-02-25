@@ -11,15 +11,17 @@ export const Filter = () => {
   };
   const dispatch = useDispatch();
   return (
-    <div className="filter">
-      <h4 className={css.title}>Find contacts by name</h4>
-      <input
-        className={css.inputFilter}
-        type="text"
-        name="filter"
-        value={filter}
-        onChange={handleFilter}
-      />
+    <div className={css.filter_wrap}>
+      <label className={css.filter}>
+        <p className={css.title}>Find contacts by name</p>
+        <input
+          className={css.inputFilter}
+          type="text"
+          name="filter"
+          value={filter}
+          onChange={handleFilter}
+        />
+      </label>
     </div>
   );
 };

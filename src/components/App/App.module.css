@@ -1,7 +1,13 @@
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  /* background: url('./img/pngwingcom2.png'); */
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
 }
 
 .titleH1 {
@@ -15,11 +21,13 @@
   box-shadow: 2px 7px 5px -1px rgba(148, 145, 148, 1);
 }
 .titleH2 {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .comment {
+  padding-left: 30px;
   width: 300px;
   margin: 0 auto;
 }

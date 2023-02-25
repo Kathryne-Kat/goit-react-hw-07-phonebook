@@ -12,16 +12,22 @@ export default function App() {
   return (
     <div className={css.container}>
       <h1 className={css.titleH1}>Phonebook</h1>
-      <ContactForm />
-      <h2 className={css.titleH2}>Contacts</h2>
-      {contacts.length > 0 ? (
-        <>
-          <Filter />
-          <ContactList />
-        </>
-      ) : (
-        <p className={css.comment}>No contacts</p>
-      )}
+      <div className={css.wrap}>
+        <div>
+          <ContactForm />
+        </div>
+        <div>
+          <h2 className={css.titleH2}>Contacts</h2>
+          {contacts.length > 0 ? (
+            <>
+              <Filter />
+              <ContactList />
+            </>
+          ) : (
+            <p className={css.comment}>No contacts</p>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

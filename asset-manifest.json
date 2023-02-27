@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-06-phonebook/static/css/main.94ec19de.css",
+    "main.css": "/goit-react-hw-06-phonebook/static/css/main.a59e1286.css",
     "main.js": "/goit-react-hw-06-phonebook/static/js/main.974fbbcf.js",
+    "static/media/pngwingcom2.png": "/goit-react-hw-06-phonebook/static/media/pngwingcom2.815ed5e177659a0810da.png",
     "index.html": "/goit-react-hw-06-phonebook/index.html",
-    "main.94ec19de.css.map": "/goit-react-hw-06-phonebook/static/css/main.94ec19de.css.map",
+    "main.a59e1286.css.map": "/goit-react-hw-06-phonebook/static/css/main.a59e1286.css.map",
     "main.974fbbcf.js.map": "/goit-react-hw-06-phonebook/static/js/main.974fbbcf.js.map"
   },
   "entrypoints": [
-    "static/css/main.94ec19de.css",
+    "static/css/main.a59e1286.css",
     "static/js/main.974fbbcf.js"
   ]
 }

@@ -10,7 +10,7 @@
 }
 .inputFilter:hover,
 :focus {
-  border: 1px solid rgb(164, 47, 231);
+  border: 1px solid #0c803c;
 }
 .filter {
   margin-left: 30px;

@@ -1,5 +1,5 @@
 .list {
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
   padding-top: 10px;
   padding-left: 30px;
@@ -17,7 +17,7 @@
   /* background-color: #b4d6f3; */
   width: 70px;
   height: 20px;
-  background-color: rgb(97, 13, 146);
+  background-color: rgb(8, 94, 47);
 
   color: #ffffff;
   /* text-transform: uppercase; */
@@ -26,6 +26,6 @@
 }
 .listDel:hover,
 .listDel:focus {
-  background-color: #7713c9;
+  background-color: #0c803c;
   cursor: pointer;
 }

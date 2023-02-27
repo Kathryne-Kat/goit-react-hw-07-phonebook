@@ -20,7 +20,7 @@ p.title {
 
   width: 100px;
   height: 30px;
-  background-color: rgb(97, 13, 146);
+  background-color: rgb(8, 94, 47);
 
   color: #ffffff;
   text-transform: uppercase;
@@ -30,7 +30,7 @@ p.title {
 
 .btn:hover,
 .btn:focus {
-  background-color: #7713c9;
+  background-color: #0c803c;
   cursor: pointer;
 }
 .numberInput {
@@ -47,9 +47,9 @@ p.title {
 }
 .numberInput:hover,
 .numberInput:focus {
-  border: 1px solid rgb(164, 47, 231);
+  border: 1px solid #0c803c;
 }
 .nameInput:hover,
 .nameInput:focus {
-  border: 1px solid rgb(164, 47, 231);
+  border: 1px solid #0c803c;
 }

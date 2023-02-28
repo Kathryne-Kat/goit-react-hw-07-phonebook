@@ -23,7 +23,7 @@ export default function App() {
       <div className={css.header}>
         <div className={css.nav}>
           <img className={css.book} src={book} alt="" />
-          <h1 className={css.titleH1}>Phonebook</h1>
+          <h1 className={css.titleH1}>PhoneBook</h1>
         </div>
       </div>
       <div className={css.container}>

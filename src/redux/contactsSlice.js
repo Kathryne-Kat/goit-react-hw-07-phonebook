@@ -14,51 +14,51 @@ const initialState = {
 const contactsSlice = createSlice({
   name: 'contacts',
   initialState,
+  reducers: {
+    handleFilterSlice: (state, actions) => {
+      state.filter = actions.payload;
+    },
+  },
   extraReducers: builder => {
     builder
       .addCase(fetchContacts.pending, state => {
         state.contacts.isLoading = true;
         state.contacts.error = null;
       })
-      .addCase(fetchContacts.fulfilled, (state, action) => {
+      .addCase(fetchContacts.fulfilled, (state, actions) => {
         state.contacts.isLoading = false;
-        state.contacts.items = action.payload;
+        state.contacts.items = actions.payload;
       })
-      .addCase(fetchContacts.rejected, (state, action) => {
+      .addCase(fetchContacts.rejected, (state, actions) => {
         state.contacts.isLoading = false;
-        state.contacts.error = action.payload;
+        state.contacts.error = actions.payload;
       })
       .addCase(addContact.pending, state => {
         state.contacts.isLoading = true;
         state.contacts.error = null;
       })
-      .addCase(addContact.fulfilled, (state, action) => {
+      .addCase(addContact.fulfilled, (state, actions) => {
         state.contacts.isLoading = false;
-        state.contacts.items = [...state.contacts.items, action.payload];
+        state.contacts.items = [...state.contacts.items, actions.payload];
       })
-      .addCase(addContact.rejected, (state, action) => {
+      .addCase(addContact.rejected, (state, actions) => {
         state.contacts.isLoading = false;
-        state.contacts.error = action.payload;
+        state.contacts.error = actions.payload;
       })
       .addCase(deleteContact.pending, state => {
         state.contacts.isLoading = true;
         state.contacts.error = null;
       })
-      .addCase(deleteContact.fulfilled, (state, action) => {
+      .addCase(deleteContact.fulfilled, (state, actions) => {
         state.contacts.isLoading = false;
         state.contacts.items = state.contacts.items.filter(
-          item => item.id !== action.payload.id
+          item => item.id !== actions.payload.id
         );
       })
-      .addCase(deleteContact.rejected, (state, action) => {
+      .addCase(deleteContact.rejected, (state, actions) => {
         state.contacts.isLoading = false;
-        state.contacts.error = action.payload;
+        state.contacts.error = actions.payload;
       });
-  },
-  reducers: {
-    handleFilterSlice: (state, actions) => {
-      state.filter = actions.payload;
-    },
   },
 });
 

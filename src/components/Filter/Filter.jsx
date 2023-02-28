@@ -5,11 +5,12 @@ import css from './Filter.module.css';
 
 export const Filter = () => {
   const filter = useSelector(selectFilter);
+  const dispatch = useDispatch();
+
   const handleFilter = e => {
     dispatch(handleFilterSlice(e.target.value));
-    //setFilter(e.target.value);
   };
-  const dispatch = useDispatch();
+
   return (
     <div className={css.filter_wrap}>
       <label className={css.filter}>

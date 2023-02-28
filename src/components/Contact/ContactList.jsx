@@ -8,6 +8,7 @@ export const ContactList = () => {
   const contacts = useSelector(selectContacts);
   const filter = useSelector(selectFilter);
   const dispatch = useDispatch();
+
   const getFilteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
@@ -17,7 +18,10 @@ export const ContactList = () => {
       {getFilteredContacts.map(contact => {
         return (
           <li className={css.listItem} key={contact.id}>
-            {contact.name}: {contact.number}
+            <div>
+              <span className={css.name}> {contact.name}</span>:{' '}
+              {contact.number}
+            </div>
             <button
               className={css.listDel}
               onClick={() => dispatch(deleteContact(contact.id))}

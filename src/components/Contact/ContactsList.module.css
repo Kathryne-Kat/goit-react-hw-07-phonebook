@@ -2,14 +2,20 @@
   width: 400px;
   margin: 0 auto;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 10px;
   margin-left: 20px;
 }
 
 .listItem {
+  width: 400px;
+  justify-content: space-between;
+  display: flex;
   padding-bottom: 10px;
 }
 
+.name {
+  font-weight: 500;
+}
 .listDel {
   margin-left: 10px;
   border-radius: 5px;
